@@ -5,7 +5,7 @@ const bodyparse = require("body-parser");
 var admin = require("firebase-admin");
 app.use(express.json());
 
-var serviceAccount = require("./serviceaccount.json");
+var serviceAccount = require("./serviceaccount.json"); //Add your serviceaccount.json path
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
